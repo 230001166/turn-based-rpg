@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1533094851 source:c:\users\dylan\desktop\rpg\main.cpp
+	"ChargeSkill.h"
+	"Entity.h"
+	<iostream>
+
+1533093279 c:\users\dylan\desktop\rpg\include\entity.h
+	<vector>
+
+1533094873 c:\users\dylan\desktop\rpg\include\skill.h
+	<string>
+	<iostream>
+	<stdlib.h>
+	<time.h>
+	"Entity.h"
+
+1533093241 source:c:\users\dylan\desktop\rpg\src\chargeskill.cpp
+	"ChargeSkill.h"
+
+1533083760 c:\users\dylan\desktop\rpg\include\chargeskill.h
+	"Skill.h"
+
