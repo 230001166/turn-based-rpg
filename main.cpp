@@ -1,44 +1,50 @@
 #include "ChargeSkill.h"
-#include "Entity.h"
+#include "SupportSkill.h"
+#include "RecoverySkill.h"
+#include "Game.h"
 
 #include <iostream>
 
 using namespace std;
+
+Game game;
 
 int main()
 {
 
     srand (time (NULL));
 
-    Entity player; Entity test; player.name = "Dinke"; player.Strength = 4; test.name = "Juju";
-    Skill light_attacke;
-    Skill *light_attack = &light_attacke;
-    ChargeSkill charge_attacke (1); charge_attacke.Name = "Pounce";
-    Skill *charge_attack = &charge_attacke;
+    Entity player; Entity test; player.name = "Dinke"; test = game.createEntityFromID (1);
 
-    player.moveset.push_back (light_attack); test.moveset.push_back (light_attack);
-    player.moveset.push_back (charge_attack);
+    Skill tempSkill;
 
-    while (player.Health > 0 && test.Health > 0) {
+    Skill *light_attack = &tempSkill;
 
-        std::cout << player.Health << " vs. " << test.Health << std::endl;
-        std::cout << player.Stamina << " vs. " << test.Stamina << std::endl;
+    light_attack->Name = "Light Attack";
+    light_attack->StaminaCost = 1;
 
-        for (int i = 0; i < player.moveset.size (); i++ ) {
+    test.moveset.push_back (light_attack);
 
+    ChargeSkill tempSkill2 (1); tempSkill2.Name = "Pounce"; tempSkill2.StaminaCost = 3;
 
-            std::cout << "[" << i << "] - " << player.moveset [i]->Name << " " << player.moveset [i]->returnType () << std::endl;
+    Skill *pounce = &tempSkill2;
 
-            player.moveset [i]->use (player, test);
+    RecoverySkill rest; rest.StaminaRecovery = 3; rest.Name = "Rest";
 
-            test.moveset [0]->use (test, player);
+    Skill *recovery_rest = &rest;
 
-        }
+    SupportSkill guard; guard.StaminaCost = 3; guard.Name = "Guard";
 
-        char oof;
-        std::cin >> oof;
+    Skill *support_guard = &guard;
 
-    }
+    test.moveset.push_back (pounce);
+
+    player.moveset.push_back (light_attack);
+    player.moveset.push_back (pounce);
+    player.moveset.push_back (recovery_rest);
+    player.moveset.push_back (support_guard);
+
+    game.battle (player, test);
 
     return 0;
 

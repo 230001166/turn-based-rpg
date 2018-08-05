@@ -1,22 +1,42 @@
 # depslib dependency file v1.0
-1533094851 source:c:\users\dylan\desktop\rpg\main.cpp
+1533442418 source:c:\users\dylan\desktop\rpg\main.cpp
 	"ChargeSkill.h"
-	"Entity.h"
+	"RecoverySkill.h"
+	"Game.h"
 	<iostream>
 
-1533093279 c:\users\dylan\desktop\rpg\include\entity.h
+1533442126 c:\users\dylan\desktop\rpg\include\entity.h
 	<vector>
 
-1533094873 c:\users\dylan\desktop\rpg\include\skill.h
+1533442965 c:\users\dylan\desktop\rpg\include\skill.h
 	<string>
 	<iostream>
 	<stdlib.h>
 	<time.h>
 	"Entity.h"
 
-1533093241 source:c:\users\dylan\desktop\rpg\src\chargeskill.cpp
+1533442953 source:c:\users\dylan\desktop\rpg\src\chargeskill.cpp
 	"ChargeSkill.h"
 
 1533083760 c:\users\dylan\desktop\rpg\include\chargeskill.h
+	"Skill.h"
+
+1533156938 c:\users\dylan\desktop\rpg\include\game.h
+	"Skill.h"
+
+1533442820 source:c:\users\dylan\desktop\rpg\src\game.cpp
+	"Game.h"
+	"ChargeSkill.h"
+
+1533159190 source:c:\users\dylan\desktop\rpg\src\recoveryskill.cpp
+	"RecoverySkill.h"
+
+1533159222 c:\users\dylan\desktop\rpg\include\recoveryskill.h
+	"Skill.h"
+
+1533442836 source:c:\users\dylan\desktop\rpg\src\supportskill.cpp
+	"SupportSkill.h"
+
+1533442849 c:\users\dylan\desktop\rpg\include\supportskill.h
 	"Skill.h"
 

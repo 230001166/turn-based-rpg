@@ -36,9 +36,13 @@
 		</Compiler>
 		<Unit filename="include/ChargeSkill.h" />
 		<Unit filename="include/Entity.h" />
+		<Unit filename="include/Game.h" />
+		<Unit filename="include/RecoverySkill.h" />
 		<Unit filename="include/Skill.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/ChargeSkill.cpp" />
+		<Unit filename="src/Game.cpp" />
+		<Unit filename="src/RecoverySkill.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />

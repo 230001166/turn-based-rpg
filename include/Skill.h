@@ -46,6 +46,12 @@ public:
 
                 damage = (attackValue - defenseValue + 1) * (attackValue - defenseValue + 1) * this->PowerMultipler;
 
+                if (defender.isGuarding) {
+
+                    damage *= 0.5;
+
+                }
+
             } else {
 
                 damage = 1;

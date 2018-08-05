@@ -10,8 +10,8 @@ struct Entity
 
     std::string name;
 
-    int Health = 17;
-    int MaxHealth = 17;
+    int Health = 23;
+    int MaxHealth = 23;
 
     int Stamina = 10;
     int MaxStamina = 10;
@@ -20,11 +20,11 @@ struct Entity
     int MaxMana = 0;
 
     int Level = 1;
-    int Experience = 0;
+    int Experience = 2;
 
     int Strength = 3;
 
-    int Defense = 2;
+    int Defense = 0;
 
     int Agility = 1;
 
@@ -35,6 +35,10 @@ struct Entity
     int Evasion = 10;
 
     std::vector <Skill* > moveset;
+
+
+
+    bool isGuarding = false;
 
 };
 

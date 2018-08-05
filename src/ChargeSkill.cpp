@@ -26,14 +26,20 @@ void ChargeSkill::use (Entity &attacker, Entity &defender) {
 
         } else {
 
-            int attackValue = (attacker.Strength * (attacker.Stamina / attacker.MaxStamina) * 1.5);
-            int defenseValue = (defender.Defense * (defender.Stamina / defender.MaxStamina));
+            int attackValue = attacker.Strength * (double) attacker.Stamina / attacker.MaxStamina;
+            int defenseValue = defender.Defense * (double) defender.Stamina / defender.MaxStamina;
 
             int damage = 0;
 
-            if (attackValue - defenseValue + 1 > 0) {
+            if (attackValue - defenseValue + 2 > 0) {
 
-                damage = (attackValue - defenseValue + 1) * (attackValue - defenseValue + 1) * this->PowerMultipler;
+                damage = (attackValue - defenseValue + 2) * (attackValue - defenseValue + 2) * this->PowerMultipler;
+
+                if (defender.isGuarding) {
+
+                    damage *= 0.5;
+
+                }
 
             } else {
 
@@ -55,8 +61,6 @@ void ChargeSkill::use (Entity &attacker, Entity &defender) {
         std::cout << attacker.name << " is charging up for an attack!" << std::endl;
 
     }
-
-    std::cout << this->turnsToCharge << std::endl;
 
 }
 
