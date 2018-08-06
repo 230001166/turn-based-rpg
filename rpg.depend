@@ -1,7 +1,9 @@
 # depslib dependency file v1.0
-1533442418 source:c:\users\dylan\desktop\rpg\main.cpp
+1533582167 source:c:\users\dylan\desktop\rpg\main.cpp
 	"ChargeSkill.h"
+	"SupportSkill.h"
 	"RecoverySkill.h"
+	"SpecialSkill.h"
 	"Game.h"
 	<iostream>
 
@@ -21,10 +23,10 @@
 1533083760 c:\users\dylan\desktop\rpg\include\chargeskill.h
 	"Skill.h"
 
-1533156938 c:\users\dylan\desktop\rpg\include\game.h
+1533581692 c:\users\dylan\desktop\rpg\include\game.h
 	"Skill.h"
 
-1533442820 source:c:\users\dylan\desktop\rpg\src\game.cpp
+1533581998 source:c:\users\dylan\desktop\rpg\src\game.cpp
 	"Game.h"
 	"ChargeSkill.h"
 
@@ -34,9 +36,15 @@
 1533159222 c:\users\dylan\desktop\rpg\include\recoveryskill.h
 	"Skill.h"
 
-1533442836 source:c:\users\dylan\desktop\rpg\src\supportskill.cpp
+1533580968 source:c:\users\dylan\desktop\rpg\src\supportskill.cpp
 	"SupportSkill.h"
 
 1533442849 c:\users\dylan\desktop\rpg\include\supportskill.h
 	"Skill.h"
+
+1533580460 c:\users\dylan\desktop\rpg\include\specialskill.h
+	"Skill.h"
+
+1533580505 source:c:\users\dylan\desktop\rpg\src\specialskill.cpp
+	"SpecialSkill.h"
 

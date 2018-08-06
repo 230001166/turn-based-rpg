@@ -18,7 +18,7 @@ void SupportSkill::use (Entity &attacker, Entity &defender) {
 
         defender.isGuarding = true;
 
-
+        std::cout << defender.name << " is guarding." << std::endl;
     }
 
 }

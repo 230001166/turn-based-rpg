@@ -20,6 +20,8 @@ class Game
         void displayEntityStats (Entity &target);
 
         void displayEntityMoveset (Entity &target);
+
+        void displayEntityHealthBar (Entity &target);
 };
 
 #endif // GAME_H

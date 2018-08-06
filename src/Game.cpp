@@ -57,6 +57,8 @@ void Game::battle (Entity &player, Entity &opponent) {
 
         displayEntityStats (player);
 
+        std::cout << "\nVs. " << opponent.name << " "; displayEntityHealthBar (opponent);
+
         displayEntityMoveset (player);
 
         int choice = 0;
@@ -77,11 +79,27 @@ void Game::battle (Entity &player, Entity &opponent) {
 
         }
 
-        opponent.moveset [1]->use (opponent, player);
+        if (opponent.Stamina >= opponent.moveset [0]->StaminaCost) { opponent.moveset [0]->use (opponent, player); } else {
+
+            opponent.moveset [1]->use (opponent, opponent);
+
+        }
 
         if (opponent.isGuarding) { opponent.isGuarding = false; }
 
         if (player.isGuarding) { opponent.isGuarding = false; }
+
+    }
+
+    if (player.Health > 0) {
+
+        std::cout << "Yay! You won!" << std::endl;
+
+    }
+
+    if (player.Health <= 0 && opponent.Health > 0) {
+
+        std::cout << "You died...Your opponent had " << opponent.Health << " HP left." << std::endl;
 
     }
 
@@ -94,6 +112,28 @@ void Game::displayEntityStats (Entity &target) {
     std::cout << "MP " << target.Mana << " /" << target.MaxMana << std::endl;
     std::cout << "STAMINA " << target.Stamina << " /" << target.MaxStamina << std::endl;
     std::cout << "======================" << std::endl;
+
+}
+
+void Game::displayEntityHealthBar (Entity &target) {
+
+    std::cout << "[";
+
+    double barsToFill = (double)target.Health / (double)target.MaxHealth * 20;
+
+    for (int i = 0; i < barsToFill; i++) {
+
+        std::cout << "=";
+
+    }
+
+    for (int i = 0; i < 20-barsToFill; i++) {
+
+        std::cout << " ";
+
+    }
+
+    std::cout << "]\n" << std::endl;
 
 }
 

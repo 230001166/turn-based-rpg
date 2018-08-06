@@ -1,6 +1,7 @@
 #include "ChargeSkill.h"
 #include "SupportSkill.h"
 #include "RecoverySkill.h"
+#include "SpecialSkill.h"
 #include "Game.h"
 
 #include <iostream>
@@ -33,18 +34,25 @@ int main()
 
     Skill *recovery_rest = &rest;
 
-    SupportSkill guard; guard.StaminaCost = 3; guard.Name = "Guard";
+    test.moveset.push_back (recovery_rest);
+
+    SupportSkill guard; guard.StaminaCost = 2; guard.Name = "Guard";
 
     Skill *support_guard = &guard;
 
-    test.moveset.push_back (pounce);
+    SpecialSkill gBreak; gBreak.StaminaCost = 4; gBreak.Name = "Guard Break";
+
+    Skill *guard_break = &gBreak;
 
     player.moveset.push_back (light_attack);
     player.moveset.push_back (pounce);
     player.moveset.push_back (recovery_rest);
     player.moveset.push_back (support_guard);
+    player.moveset.push_back (guard_break);
 
     game.battle (player, test);
+
+    std::cin.get ();
 
     return 0;
 

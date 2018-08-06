@@ -1,0 +1,29 @@
+=====================================
+
+	Battling for Dummies
+
+=====================================
+
+
+
+HP - 'Health Points'. If your HP falls to 0, you die.
+MP - 'Mana Points'. You use these to cast spells.
+STAMINA - Your energy. If you let your energy fall low enough, not only will your attacks do less damage but your enemies can do more damage to you.
+
+
+
+===========
+
+     Attacks
+
+===========
+
+Light Attack - A regular attack. Takes 1 Stamina to use.
+
+Pounce - A charge attack (takes multiple turns to use,  but deals more damage than a normal attack). Takes 3 Stamina to use.
+
+Rest - Recovers your Stamina. This is very useful if you don't want to die.
+
+Guard - For the turn that you use the move, any physical attacks you take will deal halved damage. Takes 2 Stamina to use.
+
+Guard Break - If an opponent is guarding, you will deal a lot of damage to them. Takes 4 Stamina to use.
