@@ -20,7 +20,7 @@ struct Entity
     int MaxMana = 0;
 
     int Level = 1;
-    int Experience = 2;
+    int Experience = 0;
 
     int Strength = 3;
 
@@ -30,7 +30,7 @@ struct Entity
 
     int Intelligence = 2;
 
-    int Willpower;
+    int Willpower = 0;
 
     int Evasion = 10;
 

@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1533582167 source:c:\users\dylan\desktop\rpg\main.cpp
+1533791065 source:c:\users\dylan\desktop\rpg\main.cpp
 	"ChargeSkill.h"
 	"SupportSkill.h"
 	"RecoverySkill.h"
@@ -7,7 +7,7 @@
 	"Game.h"
 	<iostream>
 
-1533442126 c:\users\dylan\desktop\rpg\include\entity.h
+1533881160 c:\users\dylan\desktop\rpg\include\entity.h
 	<vector>
 
 1533442965 c:\users\dylan\desktop\rpg\include\skill.h
@@ -23,12 +23,18 @@
 1533083760 c:\users\dylan\desktop\rpg\include\chargeskill.h
 	"Skill.h"
 
-1533581692 c:\users\dylan\desktop\rpg\include\game.h
+1533880983 c:\users\dylan\desktop\rpg\include\game.h
 	"Skill.h"
+	"Renderer.h"
+	"tileMap.h"
 
-1533581998 source:c:\users\dylan\desktop\rpg\src\game.cpp
+1533881463 source:c:\users\dylan\desktop\rpg\src\game.cpp
 	"Game.h"
 	"ChargeSkill.h"
+	"SupportSkill.h"
+	"RecoverySkill.h"
+	"SpecialSkill.h"
+	"Renderer.h"
 
 1533159190 source:c:\users\dylan\desktop\rpg\src\recoveryskill.cpp
 	"RecoverySkill.h"
@@ -47,4 +53,16 @@
 
 1533580505 source:c:\users\dylan\desktop\rpg\src\specialskill.cpp
 	"SpecialSkill.h"
+
+1533881402 c:\users\dylan\desktop\rpg\include\tilemap.h
+	<string>
+	<stdlib.h>
+
+1533792204 c:\users\dylan\desktop\rpg\include\renderer.h
+	"tileMap.h"
+	"Entity.h"
+
+1533880200 source:c:\users\dylan\desktop\rpg\src\renderer.cpp
+	"Renderer.h"
+	<iostream>
 

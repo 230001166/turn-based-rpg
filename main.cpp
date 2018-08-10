@@ -50,7 +50,7 @@ int main()
     player.moveset.push_back (support_guard);
     player.moveset.push_back (guard_break);
 
-    game.battle (player, test);
+    game.loop (player);
 
     std::cin.get ();
 

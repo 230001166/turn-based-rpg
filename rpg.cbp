@@ -38,12 +38,17 @@
 		<Unit filename="include/Entity.h" />
 		<Unit filename="include/Game.h" />
 		<Unit filename="include/RecoverySkill.h" />
+		<Unit filename="include/Renderer.h" />
 		<Unit filename="include/Skill.h" />
+		<Unit filename="include/SpecialSkill.h" />
 		<Unit filename="include/SupportSkill.h" />
+		<Unit filename="include/tileMap.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/ChargeSkill.cpp" />
 		<Unit filename="src/Game.cpp" />
 		<Unit filename="src/RecoverySkill.cpp" />
+		<Unit filename="src/Renderer.cpp" />
+		<Unit filename="src/SpecialSkill.cpp" />
 		<Unit filename="src/SupportSkill.cpp" />
 		<Extensions>
 			<code_completion />
